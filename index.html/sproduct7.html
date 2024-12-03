@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Phap</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="icon" href="123.png" type="">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="123.png" class="logo" alt="logo--"</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Buy</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <div id="prodetails" class="section-p1">    
+        <marquee style="color: #da1616; height: 200px;"><b><h1 style="color: red;">&#129309 THANK YOU FOR VISITING MY BLOG &#129309</h1></b></marquee>      
+    <h1 style="text-align: center;">Tổng hợp kiến thức javascript cần biết dành cho người mới</h1><br>             
+        <img src="tai-sao-nen-hoc-javascript-63728744439.8512.jpg" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+
+      <h1> Ⅰ.Giới thiệu </h1>
+
+      <p style="font-size: 22px; color: black; text-indent: 2cm;">&#9199 JavaScript là ngôn ngữ lập trình website phổ biến hiện nay, nó được tích hợp và nhúng vào HTML giúp website trở nên sống động hơn. JavaScript đóng vai trò như là một phần của trang web, thực thi cho phép Client-side script từ phía người dùng cũng như phía máy chủ (Nodejs) tạo ra các trang web động.</p> 
+
+      <p  style="font-size: 22px; color: black; text-indent: 2cm;">JavaScript là một ngôn ngữ lập trình thông dịch với khả năng hướng đến đối tượng. Là một trong 3 ngôn ngữ chính trong lập trình web và có mối liên hệ lẫn nhau để xây dựng một website sống động, chuyên nghiệp:</p>
+
+      <li style="font-size: 22px; color: black;"><b>HTML:</b> Hỗ trợ trong việc xây dựng layout, thêm nội dung dễ dàng trên website.</li> <br>
+      <li style="font-size: 22px; color: black;"><b>CSS:</b> Hỗ trợ việc định dạng thiết kế, bố cục, style, màu sắc,…</li><br>
+      <li style="font-size: 22px; color: black;"><b>JavaScript:</b> Tạo nên những nội dung “động” trên website. Cùng tìm hiểu rõ hơn ở phần dưới đây. JS là viết tắt của JavaScript, khi nói về JS bạn sẽ hiểu đó đang nói đến JavaScript.</li> <br>
+
+        <p style="font-size: 22px; color: black; text-indent: 2cm;">&#9889 Nhiệm vụ của Javascript là xử lý những đối tượng HTML trên trình duyệt. Nó có thể can thiệp với các hành động như thêm / xóa / sửa các thuộc tính CSS và các thẻ HTML một cách dễ dàng. <br>
+            Hay nói cách khác, Javascript là một ngôn ngữ lập trình trên trình duyệt ở phía client. Tuy nhiên, hiện nay với sự xuất hiện của NodeJS đã giúp cho Javascript có thể làm việc ở backend.</p>
+
+        <p style="font-size: 22px; color: black; text-indent: 2cm;">&#9889 Bạn hãy thử truy cập vào một số website trên internet thì sẽ thấy có những hiệu ứng slide, menu xổ xuống, các hình ảnh chạy qua chạy lại rất đẹp. tất cả các chức năng này đều được xử lý bằng Javascript. <br>
+               Trong những năm gần đây, sự xuất hiện của các framework như NodeJS (chuyên code backend), ExpressJS (NodeJS framework), và nhiều thư viện frontend khác như Angular, jQuery, RactJS ra đời, giúp tạo ra một cơn sốt với từ khóa Javascript Fullstack.</p>   
+
+            <img src="javascript-la-gi-khai-niem-1.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+            <p style="font-size: 22px; color: black; text-indent: 2cm;">Sau sự ra đời của Nodejs, JavaScript đã mở rộng khả năng của mình từ việc chỉ là một ngôn ngữ lập trình chạy trên trình duyệt, trở thành một công cụ mạnh mẽ để phát triển các ứng dụng server-side , giúp các Developer sử dụng một ngôn ngữ duy nhất cho toàn bộ ứng dụng (frontend + backend).</p> <br>
+
+            <h1> Ⅱ. Một số khái niệm về một số thuật ngữ liên quan đến JS </h1> <br>
+             <h2 style="font-size: 30px; color: black; text-indent: 1cm;">1. Khái niệm JavaScript Framework</h2>
+             <p style="font-size: 22px; color: black;"> Là thư viện được xây dựng dựa trên JS phục vụ cho từng mục đích và lĩnh vực khác nhau JavaScript Framework là thư viện được xây dựng dựa vào ngôn ngữ lập trình JavaScript. 
+                <br>
+                Từ đó, mỗi framework được tạo ra để phục cho từng lĩnh vực khác nhau. Bạn có thể tìm hiểu kỹ hơn về framework là gì, sẽ giúp bạn có thêm nhiều thông tin rõ ràng hơn. Hiện nay, có rất nhiều JavaScript Framework thông dụng như:<br>
+              <li  style="font-size: 22px; color: black; text-indent: 2cm;"><B>Reactjs:</B> Thư viện dùng cho ứng dụng mobile.</li> <br>
+              <li  style="font-size: 22px; color: black; text-indent: 2cm;"><b>Node.js:</b> Dùng để xây dựng và phát triển ứng dụng realtime từ phía máy chủ.</li> <br>
+              <li  style="font-size: 22px; color: black; text-indent: 2cm;"><b>Angular:</b> Dùng để xây dựng ứng dụng Single Page….</li> <br>
+
+            <h2 style="font-size: 30px; color: black; text-indent: 1cm;">2. Client-side Javascript</h2>
+                <p style="font-size: 22px; color: black;"> &#9925 Client-side JavaScript là mã JavaScript được thực thi trực tiếp trên trình duyệt của người dùng (Google Chrome, Microsoft Edge, Fire Fox), thường được sử dụng để tạo ra các tính năng tương tác và động trên trang web. Dưới đây là một số tính năng của client-side JavaScript: </p>   <br>                          
+            <li  style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: red;">Thao tác với DOM (Document Object Model):</b> Javascript Thao tác với DOM của một trang web, làm cho nội dung thay đổi tự động dựa theo thao tác của người dùng mà không cần tải lại trang. Ví dụ: thay đổi nội dung của một thẻ <div> khi người dùng nhấp vào nút. <br>
+                <br> 
+                <img src="462572096_1_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+           <li  style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: red;">Xử lý sự kiện người dùng:</b> lắng nghe và phản hồi các sự kiện người dùng như nhấp chuột, nhập liệu, di chuyển chuột, và nhiều sự kiện khác.
+              <img src="0912_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+            <li  style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: red;">AJAX (Asynchronous JavaScript and XML):</b> Cho phép trình duyệt gửi và nhận dữ liệu từ máy chủ mà không cần tải lại trang, điều này giúp ứng dụng trở nên mượt mà hơn.<br>
+                <br>
+                <img src="6657_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+             <li  style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: red;">Tạo hiệu ứng hình ảnh và động:</b> Tạo ra các hiệu ứng động trên trang web, chẳng hạn như chuyển động, thay đổi màu sắc, hoặc ẩn/hiện các phần tử..<br>
+                    <br>
+                    <img src="29_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+
+            <h2 style="font-size: 30px; color: black; text-indent: 1cm;">3. Server-side Javascript</h2>
+            <p style="font-size: 22px; color: black;">Server-side JavaScript là các đoạn mã JavaScript được thực thi trên máy chủ, giúp quản lý các yêu cầu từ client, tương tác với cơ sở dữ liệu,... Dưới đây là một số tính năng của server-side JavaScript:</p>
+                 <li  style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: rgb(28, 30, 146);">Xử lý yêu cầu HTTP:</b>  Xử lý các yêu cầu HTTP từ client, chẳng hạn như yêu cầu GET hoặc POST, và trả về phản hồi phù hợp (thường là HTML, JSON)..<br>
+                <br>
+                <img src="tranvuongphap.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+                <li  style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: rgb(28, 30, 146);">Tương tác với Database:</b> Kết nối và tương tác với các cơ sở dữ liệu để lưu trữ, truy xuất, và quản lý dữ liệu..<br>
+                    <br>
+                    <img src="$$_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+
+                    <h1> Ⅲ. Hướng dẫn cách viết chương trình Javascript </h1>  
+                    <p style="font-size: 22px; color: black;">&#9992 Đối với dân lập trình, thì việc viết một chương trình JavaScript tương đối dễ dàng. Thế nhưng, đối với người mới thì việc viết một chương trình ở trên JS còn khá lạ.
+                        Vậy nên, bạn có thể viết chương trình với các bước hướng dẫn như sau <br>
+                        <br>
+                <img src="555.jpeg" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+                        <h2 style="font-size: 30px; color: black; text-indent: 1cm;">1. Đặt thẻ Script ở đâu</h2>
+                    <p style="font-size: 22px; color: black;">Trong JS, chúng ta có 3 cách để đặt thẻ Script phổ biến như:
+<li style="font-size: 22px; color: black; text-indent: 1cm;"><b>Internal:</b> Viết ở trong file HTML hiện tại;</li> <br>
+<li style="font-size: 22px; color: black; text-indent: 1cm;"><b>External:</b>Viết ra một file JS khác và tiếp tục import vào;</li> <br>
+<li style="font-size: 22px; color: black; text-indent: 1cm;"><b>Inline:</b> Viết trực tiếp ở trong các thẻ HTML;</li> 
+<br>
+          <p style="font-size: 24px; color: black; text-indent: 2cm;"><U>Có 3 cách đặt thẻ script thường được sử dụng như dưới đây:</U>
+            <p style="font-size: 22px; color: black;">&#128073 Với Internal, thông thường thẻ Script sẽ được đặt ở trong thẻ < head >, tuy nhiên bạn cũng có thể đặt ở bất kỳ chỗ nào. Yêu cầu duy nhất là phải có chứa đầy đủ mở và đóng thẻ script . Bằng cách này, bạn có thể đặt phần head ở trong file HTML hiện có của mình. <br>
+<br>
+             &#128073 Đối với External, bạn sẽ viết được các đoạn mã Javascript ra trong một file mới. Sau đó, bạn lưu phần mở rộng này với đuôi .js. Kế đến, bán ẽ sử dụng thẻ Script để import file vào. Bạn không cần đến thẻ đóng < /script > vì trong file test.js đã có sự hiện diện của đuôi js
+<br>
+                <br>
+                &#128073 Vì vậy, trình duyệt sẽ tự động nhận dạng được đây là một file có chứa những mã Javascript. Đối với Inline, cách sẽ sẽ cho phép bạn viết trực tiếp các đoạn mã JS vào bên trong thẻ HTML một cách nhanh chóng.
+
+                <h2 style="font-size: 30px; color: black; text-indent: 1cm;">2. Cặp thẻ mở và đóng</h2>
+                    <p style="font-size: 22px; color: black; text-indent: 2cm;">Tất cả những đoạn mã JS đều sẽ được đặt ở trong cặp thẻ đóng và mở  script. Một ví dụ cụ thể dễ hiểu như sau:
+                        <img src="46258_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br> 
+
+                        <h2 style="font-size: 30px; color: black; text-indent: 1cm;">3. Viết chương trình JavaScript</h2>
+                    <p style="font-size: 22px; color: black; text-indent: 2cm;">Thực ra, để viết một chương trình JS cũng tương đối đơn giản. Khi bạn đã tìm hiểu về JS và biết được JS là ngôn ngữ gì thì tiếp theo chúng tôi sẽ hướng dẫn bạn cách viết chương trình đơn giản như sau:</p>
+                 <p style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: red;">Bước 1:</b> Bạn tạo 1 file index.html vào bất cứ vị trí nào ở trên máy tính, miễn là chúng có phần mở rộng .html. Sau đó, bạn viết một đoạn mã như hình sau: </p>
+                    <img src="doan-ma-viet-chuong-trinh-4.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">
+                    <p style="font-size: 20px; color: black; text-indent: 16cm;"><i>Đoạn mã viết chương trình</i></p>
+                    <br>
+                <p style="font-size: 22px; color: black; text-indent: 1cm;"><b style="color: red;">Bước 2:</b>Bạn có thể viết mã chương trình Javascript khi click chuột vào button với id=“clickme”.</p>
+                    <img src="doan-ma-minh-hoa-4.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+                    <p style="font-size: 20px; color: black; text-indent: 16cm;"><i>Đoạn mã viết chương trình</i></p>
+                    <br>
+
+                    <h1> IV. Hướng dẫn cách nhúng JS lên website </h1>   
+                                  <br>  
+                <img src="cach-nhung-js-len-website-4.jpeg" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br>
+                        <p style="font-size: 22px; color: black; text-indent: 1cm;">Để có thể nhúng một chuỗi code JS lên trang web thì bạn chỉ cần gắn tag   script  là được. Cụ thể:</p> 
+                 <img src="nhúng JS_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br>
+                 <p style="font-size: 22px; color: black;">&#128204 Một quy tắc cơ bản là bạn nên gắn JS ở trong tà < header> cho website. Trừ khi mà bạn muốn JS thực thi ở một thời điểm nhất định nào đó hoặc một yếu tố cụ thể của trang web. <br>
+                     <br>                    
+                    &#128204  Ngoài ra, bạn cũng có thể lưu lại code JS ở dưới dạng một file riêng. Và mỗi khi bạn cần khi sử dụng web thì bạn có thể mở file này lên. Cụ thể, bạn có thể thêm JS vào HTML một cách trực tiếp hoặc chèn JS trong HTML thông qua một file độc lập khác. 
+                </p> 
+
+                <h1> V. Tầm quan trọng của javascript </h1>   
+                  <h2 style="font-size: 30px; color: black; text-indent: 1cm;">1. Tại sao Javascript lại phổ biến?</h2>
+               <p style="font-size: 22px; color: black;">&#128226 Trong khảo sát hàng năm của Stack Overflow, JavaScript tiếp tục là ngôn ngữ lập trình phổ biến nhất trong suốt 11 năm liên tiếp. Đây là khảo sát lớn nhất trên thế giới trong lĩnh vực lập trình, với sự tham gia của 87,585 developers trên toàn cầu.</p> <br>
+                 <img src="javascript-la-gi-stackoverflow-survey.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+                 <p style="font-size: 20px; color: black; text-indent: 16cm;"><i>Stack Overflow Developer Survey 2023</i></p>
+                 <br>
+                 <p style="font-size: 22px; color: black;">&#128226 Báo cáo GitHub Octoverse năm 2023 cũng chỉ ra rằng JavaScript là ngôn ngữ lập trình phổ biến nhất trên nền tảng này trong suốt 10 năm. JavaScript luôn đứng đầu về số lượng repository và đóng góp của cộng đồng.</p> <br>
+                 <img src="javascript-la-gi-top-programming-languages-2023.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+                 <p style="font-size: 20px; color: black; text-indent: 16cm;"><i>GitHub Octoverse Report 2023</i></p>
+                 <br>              
+                <h2 style="font-size: 30px; color: black; text-indent: 1cm;">2. Cú Pháp Đơn Giản và Dễ Học</h2>
+                 <p style="font-size: 22px; color: black;">&#128304 Javascript là một ngôn ngữ phổ biến, dễ học, chúng ta có thể kiểm tra code của mình ngay trong trình duyệt, ngôn ngữ này thân thiện với người mới bắt đầu hơn nhiều so với các ngôn ngữ lập trình khác.</p> 
+                <h2 style="font-size: 30px; color: black; text-indent: 1cm;">3. Hỗ Trợ Rộng Rãi Từ Cộng Đồng</h2>
+                <p style="font-size: 22px; color: black;">&#128304 JavaScript có một cộng đồng lập trình viên lớn mạnh và sôi động, cung cấp vô số tài nguyên học tập, thư viện mã nguồn mở, và các công cụ hỗ trợ.</p> 
+                <h2 style="font-size: 30px; color: black; text-indent: 1cm;">4. Khả năng tạo ra giao diện phong phú</h2>
+                <p style="font-size: 22px; color: black;">&#128304 JavaScript được các lập trình viên ưa chuộng nhờ khả năng tạo ra các giao diện phong phú và hấp dẫn. JavaScript tích hợp chặt chẽ với cấu trúc trang web (DOM), cho phép thay đổi nội dung, cấu trúc và kiểu dáng của trang web theo thời gian thực. <br>
+                    <br>
+                    &#128304  Kết hợp với AJAX, JavaScript có thể giao tiếp với máy chủ và cập nhật trang web mà không cần tải lại toàn bộ. Thêm vào đó, các thư viện và framework như React, Angular, và Vue.js giúp tăng tốc quá trình phát triển.
+                     <h2 style="font-size: 30px; color: black; text-indent: 1cm;">5. Lập Trình Toàn Diện Với Nodejs</h2>
+                     <p style="font-size: 22px; color: black;">&#128304 JavaScript có thể phát triển các ứng dụng web hoàn chỉnh, quản lý cả frontend và backend chỉ với một ngôn ngữ. Với sự ra đời của Nodejs, JavaScript đã trở thành ngôn ngữ lý tưởng cho việc phát triển toàn diện (end-to-end). <br>
+                        <br>
+                        &#128304  Tuy nhiên, từ năm 2009, với Nodejs - một môi trường runtime cho phép JavaScript chạy trên server, các lập trình viên có thể tương tác với cơ sở dữ liệu, quản lý yêu cầu HTTP, tạo nội dung động bằng JavaScript. Điều này giúp lập trình viên sử dụng JavaScript cho cả frontend và backend, dẫn đến làn sóng "JavaScript ở khắp mọi nơi".</p>
+                       <img src="javascript-la-gi-nodejs-architecture.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+
+                       <h2 style="font-size: 30px; color: black; text-indent: 1cm;">6. Tính đa năng</h2>
+                       <p style="font-size: 22px; color: black;">&#128304 JavaScript cho phép phát triển backend, frontend, ứng dụng web, ứng dụng di động chỉ với một ngôn ngữ. JavaScript có thể hoạt động cả ở phía client và server nhờ vào Nodejs <br>
+                        <br>
+                        &#128304   Giúp nó trở nên cực kỳ linh hoạt. Các framework như Reactjs, Angular, Vuejs giúp tổ chức các ứng dụng phức tạp, trong khi React Native giúp tạo ra Mobile App. Javascript giúp nhiều công ty giảm bớt số lượng ngôn ngữ lập trình, tăng hiệu suất và đảm bảo tính nhất quán trong toàn bộ hệ thống.</p>
+                        <img src="javascript-la-gi-why-popular.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br>
+
+                     <h1> VI. Tổng Kết </h1> 
+                     <p style="font-size: 22px; color: black;">&#128204 Trên đây là toàn bộ thông tin về Javascript và cả cách viết chương trình JS một cách đơn giản nhất. Tuy nhiên, những thông tin trên đây chỉ cho bạn cái nhìn tổng quan nhất về ngôn ngữ lập trình này. Nếu bạn muốn phát triển tốt hơn trong lĩnh vực này thì nên tìm hiểu sâu hơn và học kỹ hơn về ngôn ngữ lập trình. <br>
+<br>
+                      &#128204 Với khả năng thích ứng và phát triển không ngừng, JavaScript đã khẳng định vị thế là một trong những ngôn ngữ lập trình được sử dụng nhiều nhất trên toàn cầu. <br>
+<br>
+                       &#128204  Nếu bạn đang băn khoăn không biết học ngôn ngữ gì khi mới tiếp cận với ngành IT, mong muốn trở thành Backend/Frontend Developer trong tương lai thì Javascript chính là lựa chọn tốt nhất vì Javascript có thể vừa phát triển được cả backend lẫn frontend.
+                     </p>
+
+                    <p style="font-size: 20px; color: black; text-indent: 6cm;"><i>Bạn thấy bài viết hay và hữu ích? Đừng ngại Share với bạn bè và đồng nghiệp nhé! Cảm ơn bạn &#129505</i></p>
+
+                    <section id="product1" class="section-p1">
+                        <h2 style="text-align: center; color: black;">Bài Viết Tham Khảo</h2> 
+                
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="-la-gi-co-vai-tro-gi-cach-bat-javascript-tren.003.jpg" alt="">
+                            <div class="des">
+                                <button class="white"><a href="https://www.thegioididong.com/hoi-dap/javascript-la-gi-co-vai-tro-gi-cach-bat-javascript-tren-1321801" target="_blank"><p style="font-size: 20px; color: red;">>MORE<</p></a></button>
+                               
+                                    <span style="font-size: 23px; color: rgb(0, 0, 0);">JavaScript là gì? Có vai trò gì?</span>
+                                    <h5 style="font-size: 20px; color: rgb(0, 0, 0);">Cách bật JavaScript trên điện thoại</h5>                                      
+                             </div>                        
+                            </div>
+                
+                            <div class="pro">
+                                <img src="46666_n.png" alt="">
+                                <div class="des">
+                                    <button class="white"><a href="https://codelearn.io/learning/javascript-basics?tab=introduce" target="_blank"><p style="font-size: 20px; color: red;">>MORE<</p></a></button>
+                               
+                                    <span style="font-size: 23px; color: rgb(0, 0, 0);">JavaScript cơ bản</span>
+                                    <h5 style="font-size: 20px; color: rgb(0, 0, 0);">Ứng dụng của JavaScript.</h5>    
+                                       
+                                    </div>                 
+                                </div>
+                           </div>
+                        </div>
+                    </section>
+                
+                    <section id="newsletter" class="section-p1 section-nl">
+                        <div class="newstext">
+                            <h4>Sign Up For Newsletters</h4>
+                        </div>
+                        <div class="form">
+                            <input type="text" placeholder="enter email address">
+                            <button class="normal">Sign Up</button>
+                        </div>
+                    </section>
+                
+                    <footer class="section-p1">
+                        <div class="col">
+                            <img class="logo" src="456.jpg" alt="">
+                            <h4>Contact</h4>
+                            <p style="color: black; font-size: 15px;"><strong>Address:</strong>  Quang Ngai province </p>
+                            <p style="color: black; font-size: 15px;"><strong>Phone:</strong>  0912-665-729 </p>
+                            <P style="color: black; font-size: 15px;"><strong>Hours:</strong>  7:00 - 22:00 </P>
+                            <style>
+                                .list-social a{
+                                    font-size: 20px;
+                                    color: rgb(24, 18, 18);
+                                }
+                                .list-social a:hover{
+                                    color: blue;
+                                }
+                               </style>
+                        <div class="follow">
+                            <h4>Follow Us</h4>              
+                            <div class="list-social">
+                                <a href="https://www.facebook.com/profile.php?id=100089143013100&locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i></a>  
+                                
+                                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                
+                                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                
+                        <div class="col">
+                            <h4>About</h4>
+                            <a href="#">About Us</a>         
+                            <a href="#">Contact Us</a>
+                        </div>
+                
+                        <div class="col install">            
+                            <p> App Store or Google Play</p>
+                            <div class="row">
+                                <img src="images/pay/app.jpg" alt="">
+                                <img src="images/pay/play.jpg" alt="">
+                            </div>
+                            <img src="images/pay/pay.png" alt="">
+                        </div>
+                
+                        <div class="copyright">
+                            <p style="color: black;">@ 2024, TRAN VUONG PHAP WEBSITE</p>
+                        </div>
+                
+                </footer>
+                
+                
+                    <script>
+                        var mainimg = document.getElementById("mainimg");
+                        var smallimg = document.getElementsByClassName("smallimg");
+                
+                        smallimg[0].onclick = function(){
+                            mainimg.src = smallimg[0].src;
+                        }
+                        smallimg[1].onclick = function(){
+                            mainimg.src = smallimg[1].src;
+                        }
+                        smallimg[2].onclick = function(){
+                            mainimg.src = smallimg[2].src;
+                        }
+                        smallimg[3].onclick = function(){
+                            mainimg.src = smallimg[3].src;
+                        }
+                    </script>
+                
+                
+                    <script src="script.js"></script>
+                </body>
+                
+                </html>

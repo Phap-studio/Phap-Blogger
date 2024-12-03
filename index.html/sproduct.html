@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Phap</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="icon" href="123.png" type="">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="123.png" class="logo" alt="logo--"</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Buy</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>              
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <div id="prodetails" class="section-p1">    
+        <marquee style="color: #da1616; height: 200px;"><b><h1 style="color: red;">&#128582 THANK YOU FOR VISITING MY BLOG &#128582</h1></b></marquee>      
+    <h1 style="text-align: center;">Viết API sử dụng Django REST framework với PostgreSQL</h1><br>             
+        <img src="images/products/000.jpg" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">         
+      <h1> Ⅰ.Giới thiệu </h1>
+       <p style="font-size: 22px; color: black;">Trong bối cảnh phát triển web, chúng ta thường nói về RESTful API. Đây là một cách phổ biển để cung cấp ứng dụng cho bên thứ ba ( các ứng dụng và web ).<br> Điều này chỉ cần cung cấp thông tin lưu trữ trong cơ sở dữ liệu ở định dạng phổ biến như XML hoặc JSON, bằng cách này một ứng dụng bên thứ ba có thể tương tác với dữ liệu mà không cần kết nối trực tiếp với cơ sở dữ liệu ,<br> cũng vì thế không quan trọng cơ sở dữ liệu là MySQL hay PostgreSQL, hoặc nếu ứng dụng được viết bằng Java hoặc Python, nhưng RESTful APIs có thể được sử dụng để sửa chữa cơ sở dữ liệu</p>
+     <p style="color: black; font-size: 25px; text-indent:1cm;"><b>1.Viết API sử dụng Django REST framework với PostgreSQL:</b></p><br>
+       <li style="color: black;font-size: 23px;">Có hỗ trợ dữ liệu ORM và non-ORM với Serialization.</li>  
+       <li style="color: black;font-size: 23px;">Tài liệu phong phú, cộng đồng hỗ trợ lớn.</li>  
+       <li style="color: black;font-size: 23px;">Tài liệu phong phú, cộng đồng hỗ trợ lớn.</li> <br>
+       <h1> Ⅱ.Cài Đặt </h1>
+        <p  style="color: black; font-size: 27px; text-indent:1cm;"><u>1.Django và Django REST framework</u></p>
+          <p style="color: black;font-size: 23px;">* Ta sử dụng lần lượt các câu lệnh sau:</p>
+        <p style="border: 1px dashed #b1154a; font-size: 20px; color: black;">pip <u style="color: red;">install</u> django<br>
+         django -admin --vesion // check phiên bản đã cài đặt
+        </p>
+          <p style="color: black;font-size: 23px;">* Sau đó ta tạo một folder chứa application:</p>
+        <p style="border: 1px dashed #b1154a; font-size: 20px; color: black;">pip <u style="color: red;">mkdir</u> TodosProject<br>
+            <u>cd</u> TodosProject<br>
+            django-admin startproject todos
+           </p>
+           <p style="color: black;font-size: 23px;">* Tiếp theo install Django REST framework:</p>
+           <p style="border: 1px dashed #b1154a; font-size: 20px; color: black;">pip <u style="color: red;">install</u> djangorestframework <br>
+           </p>
+            <img src="images/products/SQL.png" style="width: 90%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" width="90%" id="mainimg" 
+            alt=""><br>
+            <p style="color: black;font-size: 25px;"> Phần cài đặt kết nối Django với Postgres thì ta làm theo bài viết sau: <a href="https://viblo.asia/p/ket-noi-django-va-postgresql-nhu-the-nao-4P856NDa5Y3" target="_blank">https://viblo.asia/p/ket-noi-django-va-postgresql-nhu-the-nao</a>
+            </p>
+            <h1> Ⅲ.Thực Hiện </h1>  
+              <p style="color: black;font-size: 24px; text-indent:1cm;">Trong folder Django ta vừa tạo bên trên có cấu trúc như sau: </p>
+            <img src="images/products/fa01a58f-5287-4af4-9165-cddd5676c05a.webp" width="90%" id="mainimg" style="width: 60%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" >
+            <p style="color: black;font-size: 24px;">Các thành phần cụ thể như sau: </p>
+            <li style="font-size: 23px;">
+                <strong>
+                    <a href="https://docs.djangoproject.com/en/5.1/ref/contrib/admin/" target="_blank">Admin.py</a>
+                </strong>
+                " : File config trong trang admin của app."
+            </li> <br>
+            <li style="font-size: 23px;">
+                <strong>
+                    <a href="https://docs.djangoproject.com/en/5.1/topics/db/models/" target="_blank">Models.py</a>
+                </strong>
+                " : Nơi tạo dữ liệu, các trường, các bảng." 
+            </li> <br>
+            <li style="font-size: 23px;">
+                <strong>
+                    <a href="https://viblo.asia/p/test-api-su-dung-pytest-phan-1-kien-thuc-co-ban-GrLZDr435k0" target="_blank">Test.py</a>
+                </strong>
+                " : File unit test."
+            </li> <br>
+            <li style="font-size: 23px;">
+                <strong>
+                    <a href="https://www.w3schools.com/django/django_views.php" target="_blank">Views.py</a>
+                </strong>
+                " : Truy vấn dữ liệu từ model. Trước hết là như thế đã."
+            </li> <br><br>
+            <h2 style="color: black;"> 1.Models </h2>
+             <p style="font-size:25px; color: black; text-indent:1cm;">Đơn giản để tạo ra thử một <u style="color: #da1616;">Models.py</u> như sau:</p>
+
+             <img src="images/products/f29c2042-a700-4d0e-bf67-7ffb5e6d0db2.webp" style="margin-left: auto; margin-right: auto; display: block; width: 90%; border-radius: 5px;" >
+             <p style="font-size:25px; color: black; text-indent:1cm;"> Trong class model là tên bảng có các thuộc tính chính là các trường dữ liệu mà ta muốn tạo ở PostgresSQL. Với file <u style="color: red;">Admin.py</u> ta sẽ có các list thuộc tính đã khai báo trong file <u style="color: red;">Models.py</u>:</p>
+
+             <img src="images/products/2c4fb7db-b954-4f98-8b87-189563332fb2.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+             <p  style="font-size:25px; color: black; text-indent:1cm;">File <u style="color: red;">app.py</u>:</p>
+
+             <img src="images/products/20f0f724-b1e7-4795-9bab-61504231ac8b.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+             <p style="font-size:25px; color: black; text-indent:1cm;">Ta tạo một folder API gồm <u style="color: red;">Serializers</u>.py và <u style="color: red;">Viewset.py</u>.Đây là 2 file ta sẽ code thao tác để tạo được API. </p> <br>
+
+             <p  style="font-size:25px; color: black; text-indent:1cm;">Trong file <u style="color: red;">serializers.py</u> như sau:</p> <br>
+    
+             <img src="images/products/ảnh code 2.png" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p  style="font-size:25px; color: black; text-indent:1cm;">Trong file <u style="color: red;">viewset.py</u> như sau:</p> <br>
+
+             <img src="images/products/ảnh code 1.jpg" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Bên trên là kết quả mà ta nhận được hiển thị một chuỗi Json có dạng :</p>
+
+             <img src="images/products/462560552_582057084300080_7949205498709386769_n.png" style="width: 400px; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Ta Xem kết quả cụ thể ở bên dưới</p>
+
+             <h2 style="color: black;"> 2.Setting </h2>
+
+             <p  style="font-size:25px; color: black; text-indent:1cm;">Phần quan trọng tiếp theo ta cài đặt DjangoRest framework trong file <u style="color: red;">settings.py</u>:</p> <br>
+
+             <img src="images/products/462572207_454704997253462_638134465824161032_n.png" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <h2 style="color: black;"> 3.Urls </h2>
+
+             <p  style="font-size:25px; color: black; text-indent:1cm;">Để lấy được data ta tạo chuỗi URLs trong file<u style="color: red;">urls.py</u>:</p> <br>
+
+             <img src="images/products/462549170_1365719321073826_6714110998262674858_n.png" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Ta có thể tùy chỉnh URL trong hàm path bên trên.</p><br>
+
+             <h2 style="color: black;"> 4.Run</h2>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Ta đã hoàn thành phần code xây dựng API. Để run được ta dùng lệnh :</p><br>
+
+             <img src="images/products/467482457_1465749274120463_4591836647925407984_n.png" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Khi chạy ta thấy sẽ hiện như sau:</p><br>
+
+             <img src="images/products/465577129_1246728999900350_6994825024068539478_n.png" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Ta sẽ chạy server bên trên ta được:</p><br>
+
+             <img src="images/products/462582160_774768744795430_2298188056046922260_n.png" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+             <p style="font-size:25px; color: black; text-indent: 1cm;">Ta thêm / admin vào đường link bên trên ta sẽ vào được trang quản trị<br><u style="color: rgb(43, 8, 8);">Notes: </u>
+                 Điều quan trọng các bạn đã tạo createsuperuser trước khi vào trang này. Cách tạo có trong link Blog mình bên trên. Khi vào ta sẽ thấy bảng Company và khi nhấn vào ta sẽ thấy các trường ta đã code trong <u style="color: red;">models.py</u>
+            </p><br>
+            
+            <img src="images/products/1111111.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>
+
+            <p style="font-size:25px; color: black; text-indent: 1cm;">Hình 1. Link đầu tiên:</p><br>
+            
+            <img src="images/products/2222.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>   
+            
+            <p style="font-size:25px; color: black; text-indent: 1cm;">Ta thử thêm các dữ liệu vào SAVE:</p><br>
+
+            <img src="images/products/333.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>  
+
+            <p style="font-size:25px; color: black; text-indent: 1cm;">Thử với Postman:</p><br>
+
+            <img src="images/products/4444.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>  
+
+            <p style="font-size:25px; color: black; text-indent: 1cm;">Ta cũng thử check xem db có được tạo hay chưa bằng terminal:</p><br>
+
+            <img src="images/products/555.webp" style="width: 80%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;"><br>  
+
+            <p style="font-size:25px; color: black; text-indent: 1cm;">Đến đây các bạn đã hoàn thành...</p><br>
+                 
+            <h2 style="color: black;"> Kết Luận</h2>
+
+            <Li style="font-size:23px; color: black; text-indent: 1cm;">
+                Khả năng mở rộng và hiệu năng cao: PostgreSQL là một cơ sở dữ liệu quan hệ mạnh mẽ, hỗ trợ các ứng dụng lớn với khả năng quản lý dữ liệu phức tạp.
+            </Li> <br>
+            <li style="font-size:23px; color: black; text-indent: 1cm;">
+                Hỗ trợ các tính năng nâng cao: PostgreSQL cung cấp các tính năng mạnh như JSONB, hỗ trợ full-text search, indexing nâng cao, và các loại dữ liệu tùy chỉnh, rất phù hợp để sử dụng với DRF để triển khai API hiệu quả.
+            </li> <br>
+            <li style="font-size:23px; color: black; text-indent: 1cm;">
+                Tích hợp mượt mà với Django ORM: PostgreSQL tương thích tốt với Django ORM, cho phép tối ưu hóa truy vấn và sử dụng các tính năng như constraints, triggers và các extension của PostgreSQL.
+            </li> <br>
+    </div>
+
+    <section id="product1" class="section-p1">
+        <h2 style="text-align: center; color: black;">Bài Viết Tham Khảo</h2> 
+
+        <div class="pro-container">
+            <div class="pro">
+                <img src="images/products/666.png" alt="">
+            <div class="des">
+                <button class="white"><a href="https://www.koyeb.com/tutorials/use-django-rest-framework-and-managed-postgres-to-build-an-api" target="_blank"><p style="font-size: 20px; color: red;">>> MORE</p></a></button>
+               
+                    <span style="font-size: 23px; color: rgb(0, 0, 0);"> Xây dựng API</span>
+                    <h5 style="font-size: 20px; color: rgb(0, 0, 0);">Sử dụng Django REST Framework và Managed Postgres</h5>                                      
+             </div>                        
+            </div>
+
+            <div class="pro">
+                <img src="images/products/777.png" alt="">
+                <div class="des">
+                    <button class="white"><a href="https://dev.to/doridoro/deploy-a-django-app-with-postgresql-database-on-vercel-1965" target="_blank"><p style="font-size: 20px; color: red;">>> MORE</p></a></button>
+               
+                    <span style="font-size: 23px; color: rgb(0, 0, 0);"> PostgreSQL trên Vercel</span>
+                    <h5 style="font-size: 20px; color: rgb(0, 0, 0);">Triển khai ứng dụng Django với cơ sở dữ liệu</h5>    
+                       
+                    </div>                 
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-nl">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="enter email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="123.png" alt="">
+            <h4>Contact</h4>
+            <p style="color: black; font-size: 15px;"><strong>Address:</strong>  Quang Ngai province </p>
+            <p style="color: black; font-size: 15px;"><strong>Phone:</strong>  0912-665-729 </p>
+            <P style="color: black; font-size: 15px;"><strong>Hours:</strong>  7:00 - 22:00 </P>
+            <style>
+                .list-social a{
+                    font-size: 20px;
+                    color: rgb(24, 18, 18);
+                }
+                .list-social a:hover{
+                    color: blue;
+                }
+               </style>
+        <div class="follow">
+            <h4>Follow Us</h4>              
+            <div class="list-social">
+                <a href="https://www.facebook.com/profile.php?id=100089143013100&locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i></a>  
+                
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+               <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>         
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col install">            
+            <p> App Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p style="color: black;">@ 2024, TRAN VUONG PHAP WEBSITE</p>
+        </div>
+
+</footer>
+
+
+    <script>
+        var mainimg = document.getElementById("mainimg");
+        var smallimg = document.getElementsByClassName("smallimg");
+
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+        }
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

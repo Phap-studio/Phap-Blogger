@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Phap</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="icon" href="123.png" type="">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="123.png" class="logo" alt="logo--"</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Buy</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">         
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    
+    <div id="prodetails" class="section-p1">    
+        <marquee style="color: #da1616; height: 200px;"><b><h1 style="color: red;">&#128080 THANK YOU FOR VISITING MY BLOG &#128080</h1></b></marquee>      
+    <h1 style="text-align: center;">Python là gì? Tổng hợp kiến thức cơ bản cho người mới bắt đầu</h1><br>             
+        <img src="python-la-gi.jpg" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">         
+      <h1> Ⅰ.Giới thiệu </h1>
+      <p style="font-size: 22px; color: black; text-indent: 2cm;">&#9199 Nhắc đến ngôn ngữ lập trình phổ biến nhất thì Python luôn luôn được xếp trong top đầu trong hầu hết các bảng xếp hạng. Với sự phát triển của khoa học dữ liệu hiện nay, Python lại càng được ưa chuộng hơn nhờ tốc độ xử lý dữ liệu của mình. Bài viết hôm nay mình sẽ cùng các bạn tìm hiểu xem Python là gì? và các bước để tự học lập trình Python nhé.
+      </p> 
+      <h2 style="font-size: 30px; color: black; text-indent: 1cm;">1. Khái niệm về Python?</h2>
+        <p style="font-size: 22px; color: black;">&#128172 Python là một ngôn ngữ lập trình cấp cao (high-level programing language) mã nguồn mở và đa năng, được sử dụng rộng rãi trong nhiều lĩnh vực như phát triển web, khoa học dữ liệu, trí tuệ nhân tạo, và tự động hóa hệ thống, ...</p>
+        <img src="python-la-gi-1.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">    
+        <p style="font-size: 22px; color: black;">&#128172 Là 1 ngôn ngữ kịch bản (scripting language) giống với Javascript hay Ruby, thay vì biên dịch toàn bộ chương trình thành mã máy như các ngôn ngữ như C, C++, Golang hoặc Java, các ngôn ngữ scripting thường được diễn giải (interpreted) trực tiếp khi chạy. <br>
+             Điều này giúp quá trình phát triển nhanh hơn, vì lập trình viên có thể viết, chạy và sửa lỗi một cách dễ dàng mà không cần qua nhiều bước biên dịch.</p>
+
+        <h1> Ⅱ. Cú pháp đặc điểm nổi bật của Python.</h1> <br>
+            <h2 style="font-size: 30px; color: black; text-indent: 1cm;">1. Cú pháp đơn giản và dễ đọc</h2>
+             <p style="font-size: 22px; color: black;">&#128204 Cú pháp của Python gần giống với tiếng Anh tự nhiên, giúp lập trình viên hay những bạn mới bắt đầu, tiếp cận với việc lập trình một cách dễ dàng, đây là một trong những lý do chính khiến python trở nên ngày càng phổ biến. Dưới đây là so sánh giữa code Python và ngôn ngữ C++ khi bạn muốn cộng một dãy số.</p>
+              <img src="python_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+              <br>
+              <img src="python 2_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+              <h2 style="font-size: 30px; color: black; text-indent: 1cm;">2. Interpreted Language</h2>
+              <p style="font-size: 22px; color: black; text-indent: 1cm;">-Interpreted Language (ngôn ngữ được diễn giải) là một loại ngôn ngữ lập trình trong đó mã nguồn không cần phải được biên dịch thành mã máy trước khi thực thi. Thay vào đó, mã nguồn được thực thi trực tiếp bởi một trình thông dịch (interpreter). <br>
+                 Python là một ngôn ngữ như vậy, bạn có thể dễ dàng thử nghiệm các đoạn mã nhỏ, kiểm tra kết quả ngay lập tức, và gỡ lỗi dễ dàng hơn.</p>
+                 <img src="python 3.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+              <p style="font-size: 22px; color: black;"><u>Ví dụ:</u> Bạn có file code <b style="color: red;">hello.py</b> như bên dưới, để chạy chương trình này, bạn chỉ cần mở terminal hoặc command prompt và nhập <b style="color: red;">python hello.py</b>. Trình thông dịch Python đọc tệp <b style="color: red;">hello.py</b>, mỗi dòng mã được dịch và thực thi ngay lập tức, kết quả <b style="color: red;">Hello, World!</b> được in ra màn hình.</p>
+                <img src="python 4_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+                <p style="font-size: 22px; color: black;">&#128239 Để chạy chương trình này bằng Java bạn cần thực hiện hai bước: chạy lệnh <b style="color: red;">javac HelloWorld.java</b>  để trình biên dịch Java (javac) chuyển đổi mã nguồn (HelloWorld.java) thành mã bytecode  <b style="color: red;">(HelloWorld.class)</b>. Sau đó chạy lệnh  <b style="color: red;">java HelloWorld</b> để máy ảo Java (JVM) thực thi mã bytecode trong tệp  <b style="color: red;">HelloWorld.class</b>. <br>
+                     <br>
+                      <img src="python 5_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+                <p style="font-size: 22px; color: black; text-indent: 2cm;">Tuy nhiên, do phải dịch và thực thi mã trong thời gian thực, ngôn ngữ diễn giải như Python thường chậm hơn so với các ngôn ngữ biên dịch.</p>
+
+                    <h2 style="font-size: 30px; color: black; text-indent: 1cm;">3. High-level Language</h2>
+                     <p style="font-size: 22px; color: black;">-High-level Language (ngôn ngữ cấp cao) là loại ngôn ngữ lập trình được thiết kế để dễ đọc, dễ hiểu và gần gũi với ngôn ngữ tự nhiên của con người hơn so với ngôn ngữ máy hay còn gọi là ngôn ngữ assembly (ngôn ngữ cấp thấp). 
+                    </p>
+                       <img src="python 6.webp" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+                      <p style="font-size: 22px; color: black;"><u>Ví dụ</u>: So sánh <b>Python</b> và ngôn ngữ <b>Assembly</b> cùng tính tổng của hai số sau đó in ra kết quả. Môn học làm mình ám ảnh nhất khi ở trường đại học chính là môn "ngôn ngữ máy". <br>
+                        <br>
+                        <img src="python 7_n.png" style="width: 70%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+                        <br>
+                        <img src="python 8_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt="">  
+
+                <h2 style="font-size: 30px; color: black; text-indent: 1cm;">4. Kiểu dữ liệu động</h2>
+                     <p style="font-size: 22px; color: black;">Python là một ngôn ngữ lập trình kiểu dữ liệu động (dynamically typed), có nghĩa là bạn không cần phải khai báo kiểu của biến trước khi sử dụng, và một biến có thể lưu trữ các giá trị với các kiểu dữ liệu khác nhau trong suốt vòng đời của nó.</p>
+           <p style="font-size: 22px; color: black;">Ví dụ: Trong C, bạn phải khai báo rõ ràng kiểu dữ liệu của mỗi biến trước khi sử dụng (<b style="color: red;">int, float, char</b>, v.v.). Biến <b style="color: red;">x</b> được khai báo là số nguyên (<b style="color: red;">int</b>), và bạn không thể gán một giá trị chuỗi <b style="color: red;">("Hello")</b> cho <b style="color: red;">x</b> vì C không cho phép thay đổi kiểu dữ liệu của biến sau khi đã khai báo, bạn hoàn toàn có thể làm được điều này với Python.</p>
+           <img src="python 9_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> <br>
+           <br>
+           <img src="python 10_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+
+             <h2 style="font-size: 30px; color: black; text-indent: 1cm;">5. Hỗ trợ nhiều mô hình lập trình</h2>
+           <p style="font-size: 22px; color: black;">&#128294 Python là một ngôn ngữ lập trình đa mô hình (multi-paradigm), có nghĩa là nó hỗ trợ nhiều mô hình lập trình khác nhau:</p> <br>
+           <li style="font-size: 22px; color: black; text-indent: 2cm;"><b>Lập trình thủ tục (Procedural Programming)</b>: mô hình lập trình truyền thống, trong đó chương trình được cấu trúc thành các thủ tục hoặc hàm.</li> <br>
+           <li style="font-size: 22px; color: black; text-indent: 2cm;"><b>Lập trình hướng đối tượng (Object-Oriented Programming)</b>: mô hình lập trình dựa trên khái niệm "đối tượng", nơi dữ liệu và các hành vi liên quan được nhóm lại với nhau thành các đối tượng.</li> <br>
+           <li style="font-size: 22px; color: black; text-indent: 2cm;"><b>Lập trình hàm (Functional Programming)</b>: mô hình lập trình trong đó các hàm được coi là các đơn vị cơ bản của việc xây dựng chương trình.</li> <br>
+
+                     <h1> Ⅲ. Trên Python bạn làm được những gì? </h1>  
+
+             <h2 style="font-size: 30px; color: black; text-indent: 1cm;">1. Phát triển Web</h2>    
+              <p style="font-size: 22px; color: black;">&#127993 Python là một trong những ngôn ngữ phổ biến được sử dụng trong phát triển web (Web Development) , nhờ vào các framework mạnh mẽ như Django và Flask.
+                <br>
+                &#127993  Những framework này giúp lập trình viên phát triển các ứng dụng web một cách nhanh chóng và an toàn. Một vài ứng dụng nổi tiếng xây dựng trên nền tảng Django như: Instagram, Spotify, YouTube (đời đầu).</p> 
+
+                <p style="font-size: 20px; color: black; text-indent: 3cm;"><u>Ví dụ:</u> Tạo ứng dụng web đơn giản với Flask.</p>
+                <img src="python 11_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+
+     <h2 style="font-size: 30px; color: black; text-indent: 1cm;">2. Machine Learning và AI</h2>  
+         <p style="font-size: 22px; color: black; text-indent: 3cm;">&#128073 Machine Learning (Học máy) là một lĩnh vực của trí tuệ nhân tạo (AI) cho phép các hệ thống học hỏi từ dữ liệu, phát hiện các pattern và đưa ra quyết định mà không cần phải lập trình cụ thể cho từng nhiệm vụ.Python đã hỗ trợ công việc này bằng hàng hoạt các thư viện hữu ích như:</p>
+                 <li style="font-size: 22px; color: black; text-indent: 2cm;"><b>SciPy:</b> là một thư viện mở rộng của NumPy, cung cấp các hàm và module chuyên dụng cho các phép toán khoa học như tối ưu hóa, tích phân, giải phương trình vi phân, và xử lý tín hiệu.</li> <br>
+                 <li style="font-size: 22px; color: black; text-indent: 2cm;"><b>scikit-learn:</b> Là thư viện phổ biến nhất cho machine learning trong Python. Nó cung cấp các công cụ đơn giản và hiệu quả cho việc phân loại, phân cụm, regression, dimensionality reduction và model evaluation.</li> <br>
+                 <li style="font-size: 22px; color: black; text-indent: 2cm;"><b>TensorFlow:</b> Là một thư viện mã nguồn mở của Google, được thiết kế để xây dựng và huấn luyện các mô hình machine learning và deep learning. TensorFlow hỗ trợ tính toán song song trên CPU và GPU, giúp xử lý các tác vụ phức tạp và dữ liệu lớn một cách hiệu quả.</li>  <br>
+             <p style="font-size: 20px; color: black; text-indent: 3cm;"><u>Ví dụ:</u>Phân loại hoa Iris với scikit-learn</p>
+               <img src="python 12_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+
+               <h2 style="font-size: 30px; color: black; text-indent: 1cm;">3. Công cụ Tự động hóa</h2> 
+                 <p style="font-size: 22px; color: black; text-indent: 3cm;">&#128073 Nếu bạn muốn tìm một ngôn ngữ dễ dàng viết chương trình tự động hóa các tác vụ lặp đi lặp lại, giúp tiết kiệm thời gian và giảm thiểu lỗi so với việc thực hiện thủ công, thì Python chính là lựa chọn hoàn hảo dành cho bạn với cú pháp đơn giản, dễ nhớ. Ví dụ: Tự động gửi email thông báo.</p>
+                   <img src="python 13_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+
+                   <h2 style="font-size: 30px; color: black; text-indent: 1cm;">4. Phát triển Game </h2>
+                      <p style="font-size: 22px; color: black; text-indent: 3cm;">&#128073 Python, mặc dù không phải là ngôn ngữ lập trình chính trong ngành công nghiệp phát triển game so với C++ hay C#, tuy nhiên nó vẫn được sử dụng rộng rãi trong các dự án game nhỏ, game giáo dục, hoặc các nguyên mẫu (prototypes) nhờ vào sự hỗ trợ của các thư viện như Pygame, Pyglet, và Arcade. </p>
+                         <img src="python 13.webp" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+
+           <h2 style="font-size: 30px; color: black; text-indent: 1cm;">5. Networking và Cybersecurity</h2>
+                      <p style="font-size: 22px; color: black; text-indent: 3cm;">&#128073 Python cung cấp các công cụ để xây dựng các ứng dụng mạng như: tạo server và client TCP/UDP, quản lý kết nối, và tương tác với các giao thức mạng khác nhau. Python cũng có thể được sử dụng để viết các công cụ kiểm tra mạng, theo dõi và phân tích lưu lượng mạng, thực hiện các tác vụ tự động hóa trong quản trị mạng. </p>
+                      <p style="font-size: 20px; color: black; text-indent: 3cm;"><u>Ví dụ:</u>Tạo một máy chủ TCP đơn giản</p>  
+                         <img src="python 14_n.png" style="width: 50%; margin-left: auto; margin-right: auto;display: block; border-radius: 5px;" alt=""> 
+                         
+
+                         <h1> IV. Tổng Kết </h1> 
+
+                         <p style="font-size: 23px; color: black; text-indent: 2cm;">&#128204 Python là một ngôn ngữ lập trình lý tưởng cho người mới bắt đầu nhờ vào cú pháp đơn giản, dễ đọc và dễ hiểu và ứng dụng rất nhiều. 
+                            <br>
+                            &#128204 Với thiết kế thân thiện và tài liệu phong phú, Python giúp người học nhanh chóng nắm bắt các khái niệm cơ bản và tiến xa hơn trong lập trình, đặt việt với những bạn đam mê phân tích dữ liệu. 
+                            <br>
+                            &#128204 Và được đưa vào trong chương trình học trung học phổ thông machine learning, AI thì Python là một ngôn ngữ tuyệt vời không thể bỏ qua.</p>
+
+                            <p style="font-size: 20px; color: black; text-indent: 6cm;"><i>Bạn thấy bài viết hay và hữu ích? Đừng ngại Share với bạn bè và đồng nghiệp nhé! Cảm ơn bạn &#129505</i></p>
+
+                            <section id="product1" class="section-p1">
+                                <h2 style="text-align: center; color: black;">Bài Viết Tham Khảo</h2> 
+                        
+                                <div class="pro-container">
+                                    <div class="pro">
+                                        <img src="pythonnnn.png" alt="">
+                                    <div class="des">
+                                        <button class="white"><a href="https://quantrimang.com/hoc/python-la-gi-tai-sao-nen-chon-python-140518" target="_blank"><p style="font-size: 20px; color: red;">>MORE<</p></a></button>
+                                       
+                                            <span style="font-size: 23px; color: rgb(0, 0, 0);">Lịch sử của Python,Tại sao Python được tạo ra?</span>
+                                            <h5 style="font-size: 20px; color: rgb(0, 0, 0);">Tìm hiểu sự ra đời của cái tên Python trong bài viết này</h5>                                      
+                                     </div>                        
+                                    </div>
+                        
+                                    <div class="pro">
+                                        <img src="logo.webp" alt="">
+                                        <div class="des">
+                                            <button class="white"><a href="https://www.online-python.com/" target="_blank"><p style="font-size: 20px; color: red;">>MORE<</p></a></button>
+                                       
+                                            <span style="font-size: 23px; color: rgb(0, 0, 0);">Web online Python</span>
+                                            <h5 style="font-size: 20px; color: rgb(0, 0, 0);">Hãy vào để viết ngôn ngữ Python ngay trên trình duyệt này</h5>    
+                                               
+                                            </div>                 
+                                        </div>
+                                   </div>
+                                </div>
+                            </section>
+                        
+                            <section id="newsletter" class="section-p1 section-nl">
+                                <div class="newstext">
+                                    <h4>Sign Up For Newsletters</h4>
+                                </div>
+                                <div class="form">
+                                    <input type="text" placeholder="enter email address">
+                                    <button class="normal">Sign Up</button>
+                                </div>
+                            </section>
+                        
+                            <footer class="section-p1">
+                                <div class="col">
+                                    <img class="logo" src="456.jpg" alt="">
+                                    <h4>Contact</h4>
+                                    <p style="color: black; font-size: 15px;"><strong>Address:</strong>  Quang Ngai province </p>
+                                    <p style="color: black; font-size: 15px;"><strong>Phone:</strong>  0912-665-729 </p>
+                                    <P style="color: black; font-size: 15px;"><strong>Hours:</strong>  7:00 - 22:00 </P>
+                                    <style>
+                                        .list-social a{
+                                            font-size: 20px;
+                                            color: rgb(24, 18, 18);
+                                        }
+                                        .list-social a:hover{
+                                            color: blue;
+                                        }
+                                       </style>
+                                <div class="follow">
+                                    <h4>Follow Us</h4>              
+                                    <div class="list-social">
+                                        <a href="https://www.facebook.com/profile.php?id=100089143013100&locale=vi_VN" target="_blank"><i class="fab fa-facebook"></i></a>  
+                                        
+                                        <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        
+                                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                                </div>
+                        
+                                <div class="col">
+                                    <h4>About</h4>
+                                    <a href="#">About Us</a>         
+                                    <a href="#">Contact Us</a>
+                                </div>
+                        
+                                <div class="col install">            
+                                    <p> App Store or Google Play</p>
+                                    <div class="row">
+                                        <img src="images/pay/app.jpg" alt="">
+                                        <img src="images/pay/play.jpg" alt="">
+                                    </div>
+                                    <img src="images/pay/pay.png" alt="">
+                                </div>
+                        
+                                <div class="copyright">
+                                    <p style="color: black;">@ 2024, TRAN VUONG PHAP WEBSITE</p>
+                                </div>
+                        
+                        </footer>
+                        
+                        
+                            <script>
+                                var mainimg = document.getElementById("mainimg");
+                                var smallimg = document.getElementsByClassName("smallimg");
+                        
+                                smallimg[0].onclick = function(){
+                                    mainimg.src = smallimg[0].src;
+                                }
+                                smallimg[1].onclick = function(){
+                                    mainimg.src = smallimg[1].src;
+                                }
+                                smallimg[2].onclick = function(){
+                                    mainimg.src = smallimg[2].src;
+                                }
+                                smallimg[3].onclick = function(){
+                                    mainimg.src = smallimg[3].src;
+                                }
+                            </script>
+                        
+                        
+                            <script src="script.js"></script>
+                        </body>
+                        
+                        </html>
+
+
+
+               
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
